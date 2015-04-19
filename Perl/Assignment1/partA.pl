@@ -4,6 +4,9 @@ use warnings;
 use strict;
 
 
+
+
+
 print "------------- REPORT --------------- \n";
 
 my $originalPath = 'original.txt';
