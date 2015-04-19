@@ -37,7 +37,6 @@ sub checkTextFile {
 }
 
 print "------------- REPORT --------------- \n";
-
 my $wc1 = `wc $firstFilePath`;
 my @splitwc1 = split( / /, $wc1 );
 print "\noriginal.txt META DATA:\n";
@@ -45,7 +44,7 @@ print "Lines: $splitwc1[1]\n";
 print "Words: $splitwc1[2]\n";
 print "Characters: $splitwc1[3]\n";
 
-my $wc2 = `wc modified.txt`;
+my $wc2 = `wc $secondFilePath`;
 my @splitwc2 = split( / /, $wc2 );
 print "\nmodified.txt META DATA:\n";
 print "Lines: $splitwc2[1]\n";
